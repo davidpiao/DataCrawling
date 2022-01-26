@@ -104,6 +104,12 @@ if _json.get("code") == "200":
             specific = requests.get(uurl).json()
             print("@@@@@@@@@@@@@@@@@@@@@")
             print(specific)
-            for e in specific:
-                location = e.get("jibunAddress")
-                print(location)
+            
+            print('*******************')
+            print(specific["item"]["jibunAddress"])
+            #print('specific' + specific.get("register").json())
+            #for e in specific:
+                #location = e.get("jibunAddress")
+                #location = e
+                #print(location)
+                #print('structure' + str(location))
